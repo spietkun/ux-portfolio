@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.hf-container{font-family:"Inter","Open Sans","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";}.markdown-body{font-family:"Inter","Open Sans","Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";font-size:16px;line-height:1.5;}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><p><img alt="COVER.png" src="./images/mistakes_journal/pictures/portfolio_cover_logo.png"></p>
+<h1 class="atx" id="intro">Intro</h1>
+<p>MISTAKES JOURNAL</p>
+<blockquote>
+<p>"Get the most out of your mistakes by keeping a mistakes journal"</p>
+</blockquote>
+<h2 class="atx" id="introduction">Introduction</h2>
+<p>Have you ever heard the phrase "learn from your mistakes"? Almost everyone has, but not many know how to actually introduce it to life. As a team, we wanted to help people organise their mistakes, so it becomes an easier process for them.</p>
+<h2 class="atx" id="summary">Summary</h2>
+<p>Project summary:</p>
+<ul>
+<li><p>app: Mistakes Journal</p>
+</li>
+<li><p>🎯 goal: app implementation: </p>
+<ul>
+<li>your personal, online journal for storing mistakes and lessons so you can save lessons for future</li>
+</ul>
+</li>
+<li><p>💻 type: website app</p>
+</li>
+<li><p>😎 my role: UX designer, product owner/manager</p>
+</li>
+<li><p>💪 team size: 4 people (me and 3 developers)</p>
+</li>
+<li><p>📅 when: II 2020 - now</p>
+</li>
+<li><p>⚙ project: university development project (part of a research project, which will be described in another case study)</p>
+</li>
+<li><p>✅ outcome (as for 18.01.2022): early version of our app is publicly available: <a href="https://www.mistakesjournal.com/">https://www.mistakesjournal.com/</a></p>
+</li>
+</ul>
+<h2 class="atx" id="process-outline">Process outline</h2>
+<p>This case study covers : </p>
+<ul>
+<li><p>Research</p>
+</li>
+<li><p>Ideation</p>
+</li>
+<li><p>Design</p>
+</li>
+<li><p>Iterative UX &amp; dev</p>
+</li>
+<li><p>Testing</p>
+</li>
+<li><p>App launch</p>
+</li>
+<li><p>Project results</p>
+</li>
+</ul>
+<h1 class="atx" id="research">Research</h1>
+<h2 class="atx" id="context">Context</h2>
+<p>🎯 goal: Introduction</p>
+<blockquote>
+<p>As I am a person who is intereseted in general self-development, I was getting more and more frustrated by sometimes repeating the same mistakes 😫. I felt my lessons for future were slipping through my fingers, getting lost somewhere, and thought others might have the same problem.</p>
+</blockquote>
+<p>When we formed a 4 people team at the university and were looking for a problem to solve, after a quick research, we decided to dive more into understasting the mistakes analysis process 🧐. </p>
+<h2 class="atx" id="field-study">Field study</h2>
+<p>🎯 goal: Identify the best approach to turn mistakes into lessons</p>
+<p>⚙️ tools: Google Spreadsheet</p>
+<p>I was looking for sources which tell, how to learn from your mistakes in a most efficient way. Below you can see the part of a field study sheet:</p>
+<p><img alt="research_fieldstudy_v5-1.jpg" src="./images/mistakes_journal/research/field_study_mistakes_process_crop.jpg"></p>
+<p>💡 Top highlights: The most important things to do when you want to learn from your mistakes are:</p>
+<ol>
+<li><p>✅ keeping track of all your mistakes</p>
+</li>
+<li><p>✅ answering a series of questions related to the made mistake, which help you to reflect on it, like:</p>
+<ul>
+<li><p>🤔 What are the consequences?</p>
+</li>
+<li><p>🤔 Am I the only responsible?</p>
+</li>
+<li><p>🤔 What could I do better next time?</p>
+</li>
+</ul>
+</li>
+<li><p>✅ coming up with a plan, so to have a goal to achieve</p>
+</li>
+</ol>
+<p>The problem 🚨:</p>
+<ul>
+<li>Even though "learn from your mistakes" is such a common phrase, <strong>noone really teaches us these techniques</strong> (which I discovered later). This is why we wanted to create a digital effective template for everyday mistakes.</li>
+</ul>
+<h2 class="atx" id="swot-competetive-analysis">SWOT competetive analysis</h2>
+<p>🎯 goal: Check what other products support mistakes analysis and identify elements which we could improve and apply to our app</p>
+<p>⚙️ tools: Google Spreadsheet, Figma</p>
+<p>🔥 Competition:</p>
+<ul>
+<li><p>sticky notes/ paper and pen</p>
+</li>
+<li><p>a paper diary or journal</p>
+</li>
+<li><p>My Mistake Diary - What's fail in Today?</p>
+</li>
+</ul>
+<p>🖼️ Landscape (apps related to self-development, which present content in a similar way that we would do):</p>
+<ul>
+<li><p>Todoist</p>
+</li>
+<li><p>TickTick</p>
+</li>
+</ul>
+<p>Below you can find a summary of two SWOT analyses which I made:</p>
+<ul>
+<li><p>My Mistake Diary - What's fail in Today?: <a href="https://play.google.com/store/apps/details?id=com.failnote2&amp;hl=pl&amp;gl=US">My Mistake Diary - What's fail in Today? – Aplikacje w Google Play</a></p>
+<p><img alt="swot_mistakes_pic.png" src="./images/mistakes_journal/research%5Bscreen%5D_mymistakediary.png"></p>
+<p><img alt="research_swot_My Mistake Diary - What's fail in Today_.png" src="./images/mistakes_journal/research/swot_my_mistake_diary.png"></p>
+</li>
+<li><p>Sticky notes (non-digital)</p>
+<p><img alt="charlesdeluvio-Wd3DG2ABwzE-unsplash.jpg" src="./images/mistakes_journal/photos%5Bphoto%5D_sticky_notes.jpg"></p>
+<p><img alt="research_swot_sticky notes.png" src="./images/mistakes_journal/research/swot_sticky_notes.png"></p>
+<p>💡 Top highlights:</p>
+<ul>
+<li><p>Even though there are some non-digital ways to handle your mistakes, it isn't convenient and we could change it.</p>
+</li>
+<li><p>"My Mistake Diary - What's fail in Today?"  is very basic and not polished: this is why I thought we have had a chance for a place in the market.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="atx" id="hypothesis">Hypothesis</h2>
+<p>The hypothesis was formed: </p>
+<blockquote>
+<p>"There is no convenient and effiecient tool which supports mistakes analysis and lessons storage."</p>
+</blockquote>
+<h2 class="atx" id="brainstorm-team-as-stakeholders">Brainstorm: team as stakeholders</h2>
+<p>🎯 goal: Identify initial ideas which could later turn into requirements when designing the product backlog</p>
+<p>⚙️ tools: Google Docs</p>
+<p>Because all our team members considered themselves as potential app users, we conducted a brainstorm 🧠🌩️ session and noted any ideas that we could pursue in Mistakes journal.</p>
+<p>Top highlights 💡: </p>
+<ul>
+<li><p>📝 Different possibilites for mistakes description:</p>
+<ul>
+<li><p>Differentiate how much to write about a mistake based on its seriousness</p>
+</li>
+<li><p>Tag your mistakes with labels</p>
+</li>
+<li><p>Assign priorities to your mistakes</p>
+</li>
+</ul>
+</li>
+<li><p>💪 Motivation-related mechanisms:</p>
+<ul>
+<li><p>Count days without repeating the mistake</p>
+</li>
+<li><p>Get inspiration with mistakes of the day provided by us</p>
+</li>
+<li><p>Get rewards for not repeating the mistake for a given period</p>
+</li>
+</ul>
+</li>
+<li><p>✨ Others:</p>
+<ul>
+<li><p>Add the possibility to save tips for future without adding a mistake</p>
+</li>
+<li><p>Calendar with made mistakes</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="atx" id="interviews">Interviews</h2>
+<p>⚙️ tools: Google Docs, OBS studio</p>
+<p><strong>Interview plan goals</strong>:</p>
+<ol>
+<li><p>🎯 Identify the current process of mistakes analysis, if there is any</p>
+</li>
+<li><p>🎯 Identify the interest for the potential Mistakes journal app</p>
+</li>
+<li><p>🎯 Identify mechanisms that motivate people to continued and frequent use of applications</p>
+</li>
+</ol>
+<p>Below you can see the part of the interview scenario:</p>
+<p><img alt="" src="./images/mistakes_journal/research/interview_plan_crop.jpg"></p>
+<p><strong>Interviews description</strong>:</p>
+<ul>
+<li><p>✅ type: structured, but we follow up what the respondents say</p>
+</li>
+<li><p>📝 number of conducted interviews: 5 of which I conducted 2. </p>
+</li>
+<li><p>😄 participants: people we know from the univerisity or work (because firstly we wanted to see if young adults have an interest for the app), polish</p>
+</li>
+<li><p>😷 conduct: remotely, because of covid-19 pandemic. Each of them was recorded in order to better analyze them later. </p>
+</li>
+</ul>
+<p><strong>Top highlights</strong>💡:</p>
+<ul>
+<li><p>❌🔎 No effective process of mistakes analysis: </p>
+<ul>
+<li><p>People use either sticky notes or paper to write down their thoughts or think about them and store the lessons "in mind" without any tool - they are aware that it is mostly not effective 🤔</p>
+</li>
+<li><p>None of them heard about mistakes journal idea, any other tool or "framework" which supports mistakes analysis</p>
+</li>
+</ul>
+</li>
+<li><p>🥰 Big interest in the app:</p>
+<ul>
+<li>4 out of 5 were interested in trying out the app, and 2 were very excited about it</li>
+</ul>
+</li>
+<li><p>💪 Possible motivation mechanisms: </p>
+<ul>
+<li><p>visible progress in eliminating the mistake</p>
+</li>
+<li><p>a quick way of adding the mistake (buit the app can't be a simple text editor - need for a template)</p>
+</li>
+<li><p>notifications, even big ones e.g. pop-ups</p>
+</li>
+<li><p>motivational communications - that repeating the mistake is not a disaster</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="atx" id="personas">Personas</h2>
+<p>🎯 goal: Design personas which represent potential Mistakes journal users segments</p>
+<p>⚙️ tools: Figma</p>
+<p>Based on the interviews and more informal talks with people we know, I created two personas:</p>
+<ol>
+<li><p>😁 "Excited self development fan": </p>
+<p>Summarizes people, who are generally interested in self development, and tend to try out different apps related to it,  e.g. following the diet. They were excited to hear about the Mistakes journal app:</p>
+<p><img alt="reserach_persona_ann_v2.png" src="./images/mistakes_journal/research/persona_excited.png"></p>
+</li>
+<li><p>🙂 "Calm analyzer":</p>
+<p>More calm, tend to use fewer apps. They like to learn from their mistakes, but they do it on the fly. When they heard about the Mistakes journal app, they are interested and would like to try it out:</p>
+<p><img alt="research_persona_matt_v2.png" src="./images/mistakes_journal/research/persona_calm.png"></p>
+</li>
+</ol>
+<h1 class="atx" id="ideation">Ideation</h1>
+<h2 class="atx" id="brainstorm-and-an-example-flow">Brainstorm and an example flow</h2>
+<p>🎯 goal: Present an example flow of a user in the app</p>
+<p>After retrieving the requirements, it was the time to sum it all up, aswer them and define our core features, which we would later test. We conducted a team brainstorm to find the best ideas 🧠🌩️. </p>
+<p>Below you can see the mistake flow in our upcoming app:</p>
+<p><img alt="ideation_flow-1.jpg" src="./images/mistakes_journal/research/flow_initial.jpg"></p>
+<h2 class="atx" id="core-features">Core features</h2>
+<p>We defined the core features which we would later test in an early wireframe:</p>
+<ul>
+<li><p>📝 Add a mistake event and answer a series of questions: short and longer templates based on a user's preference</p>
+</li>
+<li><p>👉 View your mistakes in a list form and see a selected one's details</p>
+</li>
+<li><p>📉 See the counter of mistake's repetitions</p>
+</li>
+<li><p>🚀 See the progress bar indicating number of days without a given mistake made</p>
+</li>
+<li><p>🏷️ Use the labels to categorize your mistakes</p>
+</li>
+</ul>
+<h1 class="atx" id="design">Design</h1>
+<h2 class="atx" id="inspiration-board">Inspiration board</h2>
+<p>🎯 goal: Identify ideas for designs (e.g. mascot, features layout) and inspirations generally</p>
+<p>⚙️ tools: Dropmark</p>
+<p>I used Dropmark to save images from different websites which could be an inspiration for me when designing the flows of the features or visuals:</p>
+<p><img alt="design_dropmark_v2.jpg" src="./images/mistakes_journal/design/dropmark_horizontal.jpg"></p>
+<p>I especially saved the mascots which generally "bring joy", which I explain later in this case study.</p>
+<h2 class="atx" id="paper-sketches-and-andquotclickableandquot-prototype">Paper sketches and "clickable" prototype</h2>
+<p>🎯 goal: Verify the ideas for the app quickly</p>
+<p>⚙️ tools: pen and paper</p>
+<p>Paper sketches are the quickest way to verify if your ideas work. I prepared a "clickable protytype" for an enlarged mobile device. It covers below steps:</p>
+<ul>
+<li><p>🛬 landing page to mistake adding transition</p>
+</li>
+<li><p>📝 mistake adding template</p>
+</li>
+<li><p>📋 added mistakes list</p>
+</li>
+</ul>
+<p>Paper prototype overview:</p>
+<p><img alt="MJ_paper_prototype_plan-1.jpg" src="./images/mistakes_journal/design/paper_prototype_plan.jpg"></p>
+<p>Part of paper prototype flow (adding a mistake):</p>
+<p><img alt="design_paper_all_flow_v3.png" src="./images/mistakes_journal/design/paper_prototype_flow.png"></p>
+<h2 class="atx" id="wireframes">Wireframes</h2>
+<p>🎯 goal: Create a clickable wireframe prototype which would later be used for a usability testing to verify the app layout</p>
+<p>⚙️ tools: Figma</p>
+<p>Then, I created wireframes, and based on them, a clickable wireframe prototype, which was later tested with potential app users.</p>
+<p>Wireframes characteristics:</p>
+<ul>
+<li><p>🪨 in grey, as I didn't focus on style at that moment</p>
+</li>
+<li><p>◼️ grey boxes instead of images (but initial icons are used)</p>
+</li>
+<li><p>📐 dimension: 1200x800</p>
+</li>
+<li><p>📜 prototype script: it should be used with a given script, as certain actions are only available in a given place of the flow</p>
+</li>
+<li><p>assumption: user is signed in 🙋🏽‍♀️</p>
+</li>
+</ul>
+<p>Wireframes cover:</p>
+<ul>
+<li><p>🛬 landing page</p>
+</li>
+<li><p>📝 mistake adding page</p>
+</li>
+<li><p>📋 mistakes list page</p>
+</li>
+<li><p>🏷️ labels managment</p>
+</li>
+</ul>
+<p>Below you can see the main app pages (landing page, empty mistakes list, mistakes adding form, mistakes list):</p>
+<p><img alt="design_wireframe_4_v4.png" src="./images/mistakes_journal/design/wireframe_app_pages.png"></p>
+<h3 class="atx" id="wireframe-prototype">Wireframe prototype</h3>
+<p>⚙️ tools: Figma</p>
+<p>You can fing the clickable prototype here: <a href="https://www.figma.com/proto/vUg7lCibOccLXfVLrJaDJT/%5BMistakes-Journal%5D_wireframe_portfolio_07_01_2022?page-id=0%3A1&amp;node-id=8%3A2&amp;viewport=452%2C48%2C0.08&amp;scaling=min-zoom&amp;starting-point-node-id=8%3A2&amp;show-proto-sidebar=1">Figma</a></p>
+<p>Below you can see the wireframe prototype summary:</p>
+<p><img alt="design_wireframe_v4.png" src="./images/mistakes_journal/design/wireframe_flow.png"></p>
+<h3 class="atx" id="wireframe-prototype-usability-testing">Wireframe prototype usability testing</h3>
+<p>🎯 goal: Verify which elements of the wireframes meet the users needs and which need an adjustment</p>
+<p>⚙️ tools: Figma, OBS studio, observational study, thinking aloud protocol</p>
+<p>The things I wanted to test were if the user:</p>
+<ul>
+<li><p>understands the landing page and if is able to transition from it to signing up</p>
+</li>
+<li><p>is able to add his/her mistake and answer a series of questions</p>
+</li>
+<li><p>is able to look through his/her saved mistakes</p>
+</li>
+</ul>
+<p>Study:</p>
+<ul>
+<li><p>⚙️ technique : Remote observational study (with the scenario 📋, with <strong>thinking aloud protocol</strong> 📢 and open questions at the end of the study)</p>
+</li>
+<li><p>😃 number of participants: 6 (people who are interested in self-development) - I conducted 2 of 6 usability tests</p>
+</li>
+</ul>
+<p>📝 Study steps:</p>
+<ol>
+<li><p>Participants were given a .pdf presentation with an explanation of the study, a short explanation of mistakes journal idea, and list of steps to do in the prototype</p>
+</li>
+<li><p>When performing the steps from the scenario, participans share their device screen and comment on everything they do and think</p>
+</li>
+<li><p>At the end, there was a series of questions e.g.:</p>
+<ul>
+<li><p>If so, what did frustrate you and why?</p>
+</li>
+<li><p>If so, what did you especially like and why?</p>
+</li>
+<li><p>What would you change?</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>Parts of the scenario presentation:</p>
+<p><img alt="all.png" src="./images/mistakes_journal/design/wireframe_testing_scenario.png"></p>
+<h3 class="atx" id="observations-regarding-the-prototype">Observations regarding the prototype</h3>
+<p>What went well:</p>
+<ul>
+<li><p>✅ overall satisfaction with the prototype: participants enjoyed the "app" idea/theme</p>
+</li>
+<li><p>✅ minimal and clean design</p>
+</li>
+<li><p>✅ interface was considered as intuitial </p>
+</li>
+</ul>
+<p>What could be improved:</p>
+<ul>
+<li><p>❌ "repetition" button, for logging a single mistake repetition, wasn't understood</p>
+</li>
+<li><p>❌ some icons should be changed e.g. for left menu hiding, mistake priority or groups</p>
+</li>
+<li><p>❌ "deep analyzer", which is a button for more options for a mistake, was not understood by some</p>
+</li>
+</ul>
+<h3 class="atx" id="observations-regarding-the-study">Observations regarding the study</h3>
+<ul>
+<li><p>✅ remote observational study due to covid-19 was executed without any problem: it was even more convenient</p>
+</li>
+<li><p>✅ participants enjoyed the study as it was interesting and short</p>
+</li>
+<li><p>❌ Skipping the signing up form was a bit misleading for participants</p>
+</li>
+<li><p>❌ Some participants found it frustrating that they cannot click on everything they want</p>
+</li>
+</ul>
+<h2 class="atx" id="design-system">Design system</h2>
+<p>🎯 goal: Prepare a design environment so to define and reuse the components in prototypes, and pass the Design library to developers</p>
+<p>⚙️ tools: Figma</p>
+<h3 class="atx" id="design-system-setup">Design system setup</h3>
+<p>I used a variation of ⚛️ Atomic Design Methodolody (<a href="https://atomicdesign.bradfrost.com/chapter-2/">Atomic Design Methodology | Atomic Design by Brad Frost</a>), which aims to define low level components, and based on them, create the higher ones. Having firstly defined these elements, e.g. colors, it was much easier to design the target pages of the app later. </p>
+<p>Developers from our team have access to the figma file, so they can easily check everything they need.</p>
+<p>Structure of the project:</p>
+<p><img alt="desgin_setup.png" src="./images/mistakes_journal/design/style_tile/file_setup_design.png"></p>
+<h3 class="atx" id="tone">Tone</h3>
+<p>If I was to select one most common thing that people mentioned when talking about mistakes and an idea for this app was "<strong>mistakes are depressing</strong>" or "it may sound pessimistic" 😥.</p>
+<p>This is why, on every stage of designing, I want our app to emphasise the positive aspect of mistakes, so to change the perception of them 💪. My assumption was:</p>
+<blockquote>
+<p>The app should be fun, cheerful and non depressing. Because mistakes are tough themselves, there is no need to make it more serious</p>
+</blockquote>
+<p>~ <strong>It is the keynote of the whole app design, and its communication style, so it is not overwhelming</strong>.</p>
+<h3 class="atx" id="colors">Colors</h3>
+<p>What comes to your mind if thinking about mistakes? It might be red 🟥, because it relates to errors. But then, It <strong>could emphasise the potentially deppresive side of the app</strong>. </p>
+<p>There are 3 things when it comes to colors in this website:</p>
+<ol>
+<li><p><strong>self-development aspect</strong>: During interviews, when asked what color is associated with "miastakes journal" app, it was green 💚, as it reminds of self-development</p>
+</li>
+<li><p><strong>journal aspect</strong>: To remind it 📜, and complement green well, sandy color was chosen</p>
+</li>
+<li><p><strong>no need for overwhelming</strong>: Because mistakes are tough themselves, the color palette should be minimalistic and use neutral colors 🔲</p>
+</li>
+</ol>
+<p>Thus, the color palette is as below:</p>
+<p><img alt="design_colors.png" src="./images/mistakes_journal/design/style_tile/color_palette.png"></p>
+<h3 class="atx" id="typography">Typography</h3>
+<p>⚙️ tools: <a href="https://type-scale.com/">https://type-scale.com/</a></p>
+<ul>
+<li><p>📏 typography scale: In order to have a systematical scale I used one of the standard typography scales, 1.200 Minor Third. The tool which calculates the sizes of each next heading size is <a href="https://type-scale.com/">Type Scale - A Visual Calculator (type-scale.com)</a> </p>
+</li>
+<li><p>🤓 font size: The basic font size is 16.00px - as this app is mainly text-based, it is important that text is easily read</p>
+</li>
+<li><p>🔤 font: Montserrat - clean and minimalistic</p>
+</li>
+<li><p>👉 number of sizes: Overall there are 2 display, 6 headings, 3 paragraphs, caption and footer sizes used. Headings are in two versions: desktop and mobile.</p>
+</li>
+</ul>
+<p>Below you can see the part of typography design library:</p>
+<p><img alt="design_typo.png" src="./images/mistakes_journal/design/style_tile/typography_crop.png"></p>
+<h3 class="atx" id="grid">Grid</h3>
+<p>I used the grid with below parameters:</p>
+<ul>
+<li><p>📐 1280x800: number of columns: 12, margins: 70px, rows: 7px</p>
+</li>
+<li><p>📐 768x1024: number of columns: 8, margins: 50px, rows: 7px</p>
+</li>
+<li><p>📐 360x640: number of columns: 4, margins: 35px, rows: 7px</p>
+</li>
+</ul>
+<p>Because our app has left side menu, if it is visible, the columns span on the area without the menu. Margins for the side menu bar are: 24px</p>
+<p><img alt="desgin_grid_3.png" src="./images/mistakes_journal/design/style_tile/grid_all.png"></p>
+<h3 class="atx" id="icons">Icons</h3>
+<p>⚙️ tools: Figma, <a href="https://remixicon.com/">https://remixicon.com/</a></p>
+<h4 class="atx" id="icons-set">Icons set:</h4>
+<p>When choosing the set of icons it was important to:</p>
+<ul>
+<li><p>be available for commercial use 💵</p>
+</li>
+<li><p>provide an API 🔗 for using the icons directly in code without having to download them by developers - it was crucial for our team after my talks with them</p>
+</li>
+<li><p>be simple and emphasise the "fun" factor 😎 e.g. by roundness and general style</p>
+</li>
+</ul>
+<p>So in the end I chose remix icon set: <a href="https://remixicon.com/">https://remixicon.com/</a></p>
+<p>Example icons in the navigation bar:</p>
+<p><img alt="design_icons_nav_bar_2x_FRAME.png" src="./images/mistakes_journal/design/style_tile/icons_remix_nav_bar.png"></p>
+<h4 class="atx" id="custom-icons">Custom icons:</h4>
+<p>There was a need for me to create additional icons, kept in the same style as remix set:</p>
+<ul>
+<li><p>important for our brand: fallen ice cream (a metaphor of mistakes)</p>
+</li>
+<li><p>other, e.g. priority levels, or filled-border icons e.g. for colored tags</p>
+</li>
+</ul>
+<img data-align="center" width="304" alt="design_portfolio_custom_3x.png" src="./images/mistakes_journal/design/style_tile/icons_custom.png" title="">
+
+<h3 class="atx" id="shadows">Shadows</h3>
+<p>⚙️ tools: SmoothShadow Figma plugin</p>
+<p>For the elements shadows 👻 to be natural, I used SmoothShadow Figma plugin, which as the name suggests, creates smooth shadows by combining different layers (developers can see their properties)</p>
+<p><img alt="design_shadow_STROKE.jpg" src="./images/mistakes_journal/design/style_tile/shadows_stroke.jpg"></p>
+<h3 class="atx" id="ui-elements">UI elements</h3>
+<p>After having set the default basic (atomic) elements, I designed bigger blocks, e.g. buttons, inputs or dropdowns. </p>
+<p>Below you can the primary button:</p>
+<p><img alt="design_button_STROKE.jpg" src="./images/mistakes_journal/design/style_tile/buttons_crop_stroke.jpg"></p>
+<h3 class="atx" id="branding">Branding</h3>
+<h4 class="atx">Name</h4>
+<p>When thinking about the name of the app, it is crucial to remember that most people don't know that there is a technique to log your mistakes aka mistakes/mistake journal 🤔.</p>
+<p>Because of this, I proposed we should be straightforward and name it just as it is, <strong>"Mistakes journal"</strong> 📓:</p>
+<ul>
+<li><p>This way, there is no doubt what we offer</p>
+</li>
+<li><p>Altough it may sound general, as there is no such tool, it is our advantage.</p>
+</li>
+</ul>
+<h4 class="atx" id="logo">Logo</h4>
+<h5 class="atx" id="problem">Problem</h5>
+<p>I couldn't think of anything remarkable which associates with a word "mistake". So the first thing I did was to find it out. I tried googling "mistake" in search engines, and one common illustration, besides big red titles or warnings, was a dropped ice cream 🍦. Ice creams bring positive vibes as they are childhood memories 😊. </p>
+<p>And as we are talking about mistakes, who has never dropped a one?</p>
+<p><img alt="benjamin-hazael-rojas-garcia-VZ9zJ9wk2AE-unsplash_SQAURE.jpg" src="./images/mistakes_journal/photos%5Bphoto%5D_fallen_icecreams_crop.jpg"></p>
+<h5 class="atx" id="logo-design-process">Logo design process</h5>
+<p><img alt="design_logo_all_with_desc.png" src="./images/mistakes_journal/design/style_tile/logo_process.png"></p>
+<p>In the end, the final logo:</p>
+<ul>
+<li><p>✅ Reminds of a dropped ice cream, our symbol of a "mistake" 🍦</p>
+</li>
+<li><p>✅ Brings joy 😃 by turning it into a happy mascot, and turns a mistake into something fun</p>
+</li>
+<li><p>✅ Matches the app's design ✨ (edges roundness, minimalism)</p>
+</li>
+</ul>
+<h4 class="atx" id="mascot">Mascot</h4>
+<p>💡 Top highlights:</p>
+<ul>
+<li><p>Happy dropped ice cream mascot is supposed to make mistakes theme less serious 😋. </p>
+</li>
+<li><p>It is used in onboarding, newsletter and in social media communication. By creating different variations of logo, e.g. by adding some attributes like glasses and a pen, I can emphasise communication on desired thing</p>
+</li>
+<li><p>Its name is "Minty" as it might resemble the ice cream flavour 🍦🪴.</p>
+</li>
+</ul>
+<p>See the examples below:</p>
+<p><img alt="design_mascot.png" src="./images/mistakes_journal/design/style_tile/mascot_examples.png"></p>
+<p>And here, one of them is used in new user onboarding:</p>
+<p><img alt="design_mascot_onboarding_v2.png" src="./images/mistakes_journal/design/style_tile/mascot_example_tutorial_mistakeslist.png"></p>
+<h1 class="atx" id="iterative-ux-andamp-dev">Iterative UX &amp; dev</h1>
+<h2 class="atx" id="combing-scrum-ux-and-dev-works">Combing Scrum, UX and dev works</h2>
+<p>🎯 goal: make work in the team as efficient as possible</p>
+<p>⚙️ tools: Jira</p>
+<p>This project is not a theoretical one, but with group of my friends, our goal was to launch the real app 💪. We are working in a scrum methodology and as a product owner I'm responsible for the product backlog. </p>
+<p>There are a few ways of combining UX process with Scrum, and our approach was:</p>
+<ul>
+<li><p>UX research phase was done as early sprints, without tracking tasks in software like Jira. I headed these tasks and my teamates took parts in some of them e.g. interviews.</p>
+</li>
+<li><p>After main research tasks were done, we started using Jira software to track our tasks</p>
+</li>
+<li><p>We split our rensponsibilites more and UX design phase tasks were done in parallel to setting up the development environment </p>
+</li>
+<li><p>Finally, in a product backlog, we have a set of features (jira issues) to be implemented in our app. When the next sprint comes, the selected ones are divided into 3 subtasks:</p>
+<ul>
+<li><p>🎨 UX task: to design the feature</p>
+</li>
+<li><p>👨‍💻 backend task: to implement it</p>
+</li>
+<li><p>🖥️ frontend task: to make it work in the app</p>
+</li>
+</ul>
+</li>
+<li><p>Ideally, UX tasks are done in advance, so the related backend and frontend ones are executed in the next sprint based on the previously created design, e.g. feature mockup.</p>
+</li>
+<li><p>Each team member (developers) has an access to the design files and prototypes in Figma</p>
+</li>
+<li><p>We group jira issues in epics which we treat as categories of the features in our app, e.g. "User account", "Mistakes", "Landing page"</p>
+</li>
+</ul>
+<p>Below you can see an example screen of backlog epic, "User motivating". If we were to decide to implement "View of example mistakes" feature, we would divide it into 3 subtasks: UX, back and front.</p>
+<p><img alt="dev_jira_v4.png" src="./images/mistakes_journal/iterative_ux_dev/jira_backlog_split_task.png"></p>
+<h2 class="atx" id="mvp">MVP</h2>
+<p>🎯 goal: define the Minimum Viable Product which will let the users experience the essence of mistakes journal</p>
+<p>Our MVP contained:</p>
+<ul>
+<li><p>features:</p>
+<ul>
+<li><p>✅ logging the mistakes 📝, related lessons and answers to additional questions which help to analyze them: in a standard and extended form </p>
+</li>
+<li><p>✅ showing the progress 📉 in eliminating the mistake and related counter of its repetitions, per each mistake</p>
+</li>
+<li><p>✅ categorization of mistakes by using custom labels 🏷️</p>
+</li>
+<li><p>✅ landing page 🛬, which explains the apps features</p>
+</li>
+<li><p>✅ user onboarding (mascot tutorial 🍦)</p>
+</li>
+</ul>
+</li>
+<li><p>other:</p>
+<ul>
+<li><p>☑️ polish and english translations</p>
+</li>
+<li><p>☑️ desktop - tablet - mobile responsiveness</p>
+</li>
+<li><p>☑️ user sign up</p>
+</li>
+<li><p>☑️ university reserach project related features which will be explained in another case study (in summary: dynamic interface)</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="dev_mvp-1.jpg" src="./images/mistakes_journal/iterative_ux_dev/mvp_doodle.jpg"></p>
+<h2 class="atx" id="mockups-and-prototypes">Mockups and prototypes</h2>
+<p>🎯 goal: design and test final designs of Mistakes journal</p>
+<p>⚙️ tools: Figma</p>
+<h3 class="atx" id="mockups">Mockups</h3>
+<p>🖼️ Characteristics of created mockups:</p>
+<ul>
+<li><p>Mockups are of high fidelity, with design systems applied (colors, icons etc.) 🎨</p>
+</li>
+<li><p>Each app view and its features are prepared in different resolutions:</p>
+<ul>
+<li><p>💻 desktop: 1280 x 800 (there are comments made what happens if the screen resolution is bigger than 1280)</p>
+</li>
+<li><p>📔 tablet: 768 x 1024</p>
+</li>
+<li><p>📱 mobile: 360 x 640</p>
+</li>
+</ul>
+</li>
+<li><p>Based on them, I created prototypes (next chapter)</p>
+</li>
+</ul>
+<p>Mockups of different views (landing page, empty mistakes list, mistake adding form, mistakes list, label managment):</p>
+<img data-align="center" width="681" alt="dev_mockups_v3.png" src="./images/mistakes_journal/design/mockups_all.png" title="">
+
+<h3 class="atx" id="prototypes">Prototypes</h3>
+<p>Characteristics of created prototypes:</p>
+<ul>
+<li><p>Each designed feature or view has its own separete prototype: instead of one, big, app-like prototype, my approach was to create a set of small prototypes (flows) which focus on certain features, because:</p>
+<ul>
+<li><p>we find it easier to manage</p>
+</li>
+<li><p>developers can easily find the designs which are relevant to their tasks, e.g. a prototype of label creation or of label deletion, which are in the same file </p>
+</li>
+</ul>
+</li>
+<li><p>Each prototype has the steps 📋 defined, which are visible when opening it</p>
+</li>
+</ul>
+<p>Below you can see an example prototype, with a selected flow: Mistake deletion:</p>
+<p><img alt="dev_prototype_steps.png" src="./images/mistakes_journal/design/mockup_prototype_figma_options.png"></p>
+<p>Try it out on your own 💪! Links to prototypes related to different features ⬇️:</p>
+<ul>
+<li><p>Landing page: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=102%3A383&amp;node-id=876%3A135190&amp;viewport=452%2C48%2C0.08&amp;scaling=min-zoom&amp;starting-point-node-id=876%3A135190&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+<li><p>Register page: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=195%3A2595&amp;node-id=210%3A2889&amp;viewport=452%2C48%2C0.12&amp;scaling=min-zoom&amp;starting-point-node-id=210%3A2889&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+<li><p>User onboarding: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=830%3A58184&amp;node-id=844%3A67691&amp;viewport=452%2C48%2C0.09&amp;scaling=min-zoom&amp;starting-point-node-id=844%3A67691&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+<li><p>App page: basic view: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=147%3A526&amp;node-id=306%3A8811&amp;viewport=452%2C48%2C0.18&amp;scaling=min-zoom&amp;starting-point-node-id=306%3A8811&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+<li><p>App page: mistakes view: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=237%3A3375&amp;node-id=259%3A6610&amp;viewport=452%2C48%2C0.07&amp;scaling=min-zoom&amp;starting-point-node-id=259%3A6610&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+<li><p>App page: labels: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=512%3A65845&amp;node-id=512%3A68507&amp;viewport=452%2C48%2C0.11&amp;scaling=min-zoom&amp;starting-point-node-id=512%3A68507&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+<li><p>Solved mistakes page: <a href="https://www.figma.com/proto/PDfnoDK3YKkIn1ocj6Bd7h/%5Bprojects%5D-mistake-journal_portfolio_10_01_2022?page-id=958%3A79328&amp;node-id=958%3A79329&amp;viewport=452%2C48%2C0.43&amp;scaling=min-zoom&amp;starting-point-node-id=958%3A79329&amp;show-proto-sidebar=1">Figma</a></p>
+</li>
+</ul>
+<h3 class="atx" id="prototypes-usability-testing">Prototypes usability testing</h3>
+<p>Prototypes were tested, right as they were created, by our close stakeholders. I also did observational studies, analogical to the one with the grey wireframe prototype.</p>
+<p>I had the biggest challenge with designing the mechanism to log your mistakes repetitions. By testing the prototypes with people, I was constantly trying to improve it:</p>
+<p><img alt="dev_bar_comparison_SQAURE.png" src="./images/mistakes_journal/design/mockup_prototype_testing_progressbar_vertical.png"></p>
+<h2 class="atx" id="evolution-of-app-views-sketchwireframemockups">Evolution of app views: sketch/wireframe/mockups</h2>
+<p>Below you can see the comparision of the same view (mistakes list with a selected mistake) as a sketch, wireframe, mockup and an implemented app (<a href="https://www.mistakesjournal.com/">Mistakes Journal</a>)</p>
+<p><img alt="dev_comparision_all.png" src="./images/mistakes_journal/design/design_evolution_mistakes_list.png"></p>
+<h1 class="atx" id="testing">Testing</h1>
+<h2 class="atx" id="mvp-usability-testing">MVP usability testing</h2>
+<p>Before launching our app to a bigger audience, I performed observational studies again, but this time with the real app. </p>
+<p>This had two main goals:</p>
+<ul>
+<li><p>🎯 Verify the same tasks as in the previous studies, this time with the real application</p>
+</li>
+<li><p>🎯 For the first time, the user has the ability to freely explore the app, so more findings or bugs may be observed</p>
+</li>
+</ul>
+<p>Study description document (left) and 1of 3 study execution report (right):</p>
+<p><img alt="testing_ux_BOTH.png" src="./images/mistakes_journal/testing/mvp_testing_plan_and_Jagoda.png"></p>
+<p>What was highly enjoyed:</p>
+<ul>
+<li><p>✅ Log your mistake form: the advanced one is nice and it is also not mandatory</p>
+</li>
+<li><p>✅ Layout, intuitiveness, and the color scheme</p>
+</li>
+<li><p>✅ Mascot 🍦 and its ice cream metaphore, "laid-back" style of an app 😎</p>
+</li>
+</ul>
+<p>What could be improved:</p>
+<ul>
+<li><p>❌ Onboarding tutorial can't be repeated -&gt; implication:  ✅it is now available in the navigation bar in "Help"</p>
+</li>
+<li><p>❌ Some color labels were not understood well -&gt; implication: ✅changed their names or adjusted the colors, e.g. problematic "watermelon" (red or green?) to "strawberry"</p>
+</li>
+<li><p>❌ On mobile, when left menu was opened, people instinctively tapped outside of it to close it, instead of clicking the hide menu icon-&gt; implication: ✅enabled the other way to close the menu</p>
+</li>
+</ul>
+<h1 class="atx" id="app-launch">App launch</h1>
+<p>Because this project had also another university related goal, which will be described in another case study, we needed to reach a lot of people in a short period of time, so they could later fill out the surveys. </p>
+<h2 class="atx" id="google-analitics">Google Analitics</h2>
+<p>Before launching the app It was important to set up GA (Google Analitics) which enables to control trends in Mistakes journal usage. It is a powerful tool which we use e.g. for:</p>
+<ul>
+<li>🎯 users overview e.g. their devices</li>
+<li>🎯 traffic control</li>
+<li>🎯 defining custom events (which I defined and later were implemented in code by my teammates)</li>
+</ul>
+<p>Some observations:</p>
+<ul>
+<li><p>🔎 Observation: Mobile users are the biggest group so we might focus on it more.</p>
+</li>
+<li><p>🔎 Observation: Number of tutorial launches is about the same number as skipping the tutorial, so the quick conclusion is, it is well balanced</p>
+</li>
+</ul>
+<p>Information from GA:</p>
+<p><img alt="launch_BOTH.jpg" src="./images/mistakes_journal/marketing/google_analitics_device_category_and_events.jpg"></p>
+<h2 class="atx" id="social-media">Social media</h2>
+<p>🎯 goal: engage our users by motivating them through social media</p>
+<p>⚙️ tools: Facebook Business Suite</p>
+<h3 class="atx" id="social-media-setup">Social media setup</h3>
+<p>I have launched both facebook and instagram pages when starting our app, so to keep our users informed about things related to Mistakes journal. </p>
+<p>Summary:</p>
+<ul>
+<li><p>posts have custom illustrations 🖌️, with the same design system as our app. They often reuse some designs made for the website in order to save the time.</p>
+</li>
+<li><p>both instagram and facebook pages have similar content, in a slightly different form</p>
+</li>
+<li><p>posts are written in both english and polish: there are sections for each of them</p>
+</li>
+<li><p>Minty mascot 🍦 is often featured in them</p>
+</li>
+</ul>
+<p>Example illustrations:</p>
+<p><img alt="illustrations_2.png" src="./images/mistakes_journal/marketing/illustrations_social_media.png"></p>
+<h3 class="atx" id="facebook-business-suite">Facebook Business Suite</h3>
+<p>I use Facebook Business Suite to plan fb and instagram publication dates in advance and see their statistics:</p>
+<img width="428" data-align="center" alt="publication.jpg" src="./images/mistakes_journal/marketing/facebook_business_suite_crop.jpg" title="">
+
+<h3 class="atx" id="content">Content</h3>
+<p>To be conistent, When designing the posts, I create different types of them, e.g.:</p>
+<ul>
+<li><p>😮 Mistake of the week: an example mistake with given solutions</p>
+</li>
+<li><p>🚀 Mistakes journal feature: when we explain a selected feature</p>
+</li>
+<li><p>📚 Mistakes related quotes: so to get our audience inspired</p>
+</li>
+<li><p>🕬 Simple announcements, e.g. about upcoming survey</p>
+</li>
+</ul>
+<h3 class="atx" id="facebook">Facebook</h3>
+<p>➡️ facebook: <a href="https://www.facebook.com/mistakesjournal">https://www.facebook.com/mistakesjournal</a></p>
+<p>Below you can see the Mistakes journal facebook main page. The main things to do were to select an appropiate background photo, set up CTA Use app button and fill the About section:</p>
+<p><img alt="facebook.jpeg" src="./images/mistakes_journal/marketing/fb_homepage.jpeg"></p>
+<p>Example facebook posts:</p>
+<p><img alt="fb_posts.png" src="./images/mistakes_journal/marketing/fb_posts.png"></p>
+<h3 class="atx" id="instagram">Instagram</h3>
+<p>➡️ instagram: <a href="https://www.instagram.com/mistakesjournal/">https://www.instagram.com/mistakesjournal/</a></p>
+<p>Instagram page:</p>
+<p><img alt="instagram_crooped.png" src="./images/mistakes_journal/marketing/instagram_homepage_crop.png"></p>
+<p>Example instagram posts:</p>
+<p><img alt="insta_posts.png" src="./images/mistakes_journal/marketing/instagram_posts.png"></p>
+<h2 class="atx" id="newsletter">Newsletter</h2>
+<p>🎯 goal: engage our users by providing them challenges to do</p>
+<p>⚙️ tools: beefree.io for email design, Google Analitics, Google Analytics Campaign URL Builder</p>
+<p>When signing up to Mistakes journal, you can optionally select to be signed into a newsletter. Summary:</p>
+<ul>
+<li><p>language:  Sent 📧 in english or polish, based on the user information</p>
+</li>
+<li><p>CTA (call to action): We encourage the audience to make some action 💪, e.g. reflect when 2021 year came to an end and formulate some goals to achieve</p>
+<ul>
+<li>There is a CTA button 🚨 in each newsletter, e.g. "Go to Mistakes Journal". I use <strong>Google Analytics Campaign URL Builder</strong> to modify the link to our app with a tag, in order to be able to see the statistics about how many people clicked it 📈</li>
+</ul>
+</li>
+<li><p>design: Made in html 👩‍💻, so it could be well styled</p>
+</li>
+</ul>
+<p>Newsletter design process:</p>
+<ul>
+<li><p>design the template in figma 🎨</p>
+</li>
+<li><p>used beefree.io 🐝 to easily create an html template for an email which is well displayed in different tools e.g. Outlook or gmail, espiecially buttons.</p>
+</li>
+<li><p>example: 2022WW1 New Year's 🎇 newsletter:</p>
+</li>
+</ul>
+<p><img alt="newsletter_email.png" src="./images/mistakes_journal/marketing/newsletter_email.png"></p>
+<h2 class="atx" id="ux-survey">UX survey</h2>
+<p>⚙️ tools: Google forms, <a href="https://www.ueq-online.org/">https://www.ueq-online.org/</a></p>
+<p>To learn more about users attitude towards Mistakes journal app, I have prepared a UX survey.</p>
+<p>Goals of the survey:</p>
+<ul>
+<li><p>🎯 What is the level of satisfaction of users when using mistakesjournal.com</p>
+</li>
+<li><p>🎯 What is the users' attitude towards Mistakes journal brand</p>
+</li>
+</ul>
+<p>Metrics to measure:</p>
+<ul>
+<li><p>Attribute: 😃 User satisfaction </p>
+<ul>
+<li>📏 Metric: UEQ (User Experience Questionnaire, <a href="https://www.ueq-online.org/">https://www.ueq-online.org/</a>) mean answers value according to provided Data Analysis Tool, calculated for a month</li>
+</ul>
+</li>
+<li><p>Attribute: 🏷️ Brand loyalty</p>
+<ul>
+<li>📏 Metric: NPS (Net Promoter Score), NPS = % of Promoters ( — ) % of Detractors, calculated for a month</li>
+</ul>
+</li>
+</ul>
+<p>Because the metrics use standard surveys, I only had to design open questions at the end of the survey, to get qualitative answers, besides the quantitative ones, e.g.:</p>
+<ul>
+<li><p>What did you like best, if anything?</p>
+</li>
+<li><p>What could we do better?</p>
+</li>
+<li><p>What other features would you like to see in our app?</p>
+</li>
+</ul>
+<p>Part of the survey:</p>
+<p><img alt="survey_1.jpg" src="./images/mistakes_journal/testing/ueq_survey_crop_start.jpg"></p>
+<p>We are currently conducting it so its results will be published later. </p>
+<h1 class="atx" id="project-results">Project results</h1>
+<h2 class="atx" id="what-went-well-✅">What went well ✅</h2>
+<ul>
+<li><p>✅ Very good team communication and UX+dev scrum sprints resulted in steady implementation progress</p>
+</li>
+<li><p>✅ Stakeholders were engaged in prototypes testing and enjoyed them</p>
+</li>
+<li><p>✅ We were able to lauch the first version of our app, together with a small campaign</p>
+</li>
+</ul>
+<h2 class="atx" id="what-could-be-improved-🔥">What could be improved 🔥</h2>
+<ul>
+<li>🔥Reach more people really intereseted in self-development, e.g. from different facebook groups, as we found that people to which we were targetting at the beginning (IT students), weren't that interested in our app</li>
+</ul>
+<h2 class="atx" id="next-steps-🚀">Next steps 🚀</h2>
+<ol>
+<li><p>🚀 Get feedback about our app: What should we improve? Do people find it useful?</p>
+<ul>
+<li>action: deep interviews, UX survey study results</li>
+</ul>
+</li>
+<li><p>🚀 Analyze the statistics about Mistakes journal usage</p>
+<ul>
+<li>action: Google Analitics reports</li>
+</ul>
+</li>
+<li><p>🚀 Think about adjusting its features</p>
+<ul>
+<li>action: refine the backlog</li>
+</ul>
+</li>
+</ol>
+</article>
+</body>
+</html>

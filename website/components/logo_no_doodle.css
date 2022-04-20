@@ -1,0 +1,24 @@
+.logo_no_doodle-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.logo_no_doodle-navlink {
+  font-weight: 700;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  letter-spacing: 5px;
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.logo_no_doodle-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 5px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius4);
+  background-image: radial-gradient(circle at left, rgb(251, 245, 226) 1.00%,rgb(254, 223, 223) 51.00%,rgb(209, 241, 238) 99.00%);
+}
+

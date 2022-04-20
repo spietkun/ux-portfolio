@@ -1,0 +1,40 @@
+.logo_old-container {
+  display: flex;
+  position: relative;
+}
+.logo_old-navlink {
+  font-weight: 700;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  letter-spacing: 5px;
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.logo_old-text {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-mj);
+}
+.logo_old-text1 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-perfume);
+}
+.logo_old-text2 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-fr);
+}
+.logo_old-text3 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-fr2);
+}
+.logo_old-text4 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-mj);
+}
+.logo_old-text5 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-perfume);
+}
+.logo_old-text6 {
+  font-weight: 700;
+}
