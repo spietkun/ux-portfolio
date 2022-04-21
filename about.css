@@ -65,6 +65,7 @@
 
 
 
+
 .about-container {
   width: 100%;
   display: flex;
@@ -163,7 +164,7 @@
   color: var(--dl-color-gray-1e293b);
   text-align: center;
   line-height: 1.5;
-  padding-top: var(--dl-space-space-fourunits);
+  padding-top: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
 }
 .about-container2 {
@@ -195,63 +196,70 @@
 .about-text06 {
   font-size: 1.17em;
 }
-.about-li1 {
+.about-li01 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text07 {
   font-size: 1.17em;
 }
-.about-li2 {
+.about-li02 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text08 {
   font-size: 1.17em;
 }
-.about-li3 {
+.about-li03 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text09 {
   font-size: 1.17em;
 }
-.about-li4 {
+.about-li04 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text10 {
   font-size: 1.17em;
 }
-.about-li5 {
+.about-li05 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text11 {
   font-size: 1.17em;
 }
-.about-li6 {
+.about-li06 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text12 {
   font-size: 1.17em;
 }
-.about-text14 {
-  text-decoration: underline;
-}
-.about-li7 {
+.about-li07 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
-.about-text15 {
+.about-text13 {
   font-size: 1.17em;
 }
-.about-li8 {
+.about-text15 {
+  text-decoration: underline;
+}
+.about-li08 {
   line-height: 1.5;
   padding-top: var(--dl-space-space-unit);
 }
 .about-text16 {
+  font-size: 1.17em;
+}
+.about-li09 {
+  line-height: 1.5;
+  padding-top: var(--dl-space-space-unit);
+}
+.about-text17 {
   color: var(--dl-color-gray-1e293b);
   width: 700px;
   align-self: center;
@@ -261,13 +269,13 @@
   padding-top: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-oneandhalfunits);
 }
-.about-text17 {
+.about-text18 {
   font-weight: 400;
 }
 .about-link1 {
   display: contents;
 }
-.about-text18 {
+.about-text19 {
   color: var(--dl-color-gray-1e293b);
   width: 700px;
   align-self: center;
@@ -359,10 +367,10 @@
   .about-text04 {
     width: 100%;
   }
-  .about-text16 {
+  .about-text17 {
     width: 100%;
   }
-  .about-text18 {
+  .about-text19 {
     width: 100%;
   }
   .about-footer {
