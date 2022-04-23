@@ -1,0 +1,16 @@
+.footer\ mail-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+.footer\ mail-image {
+  object-fit: cover;
+  padding-right: var(--dl-space-space-halfunit);
+}
+
+
+
+
+

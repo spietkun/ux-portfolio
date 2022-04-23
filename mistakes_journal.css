@@ -66,6 +66,23 @@
 
 
 
+.footermail-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+.footermail-image {
+  object-fit: cover;
+  padding-right: var(--dl-space-space-halfunit);
+}
+
+
+
+
+
+
 .mistakes-journal-container {
   width: 100%;
   display: flex;
@@ -133,15 +150,6 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: space-between;
 }
-.mistakes-journal-container1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.mistakes-journal-image {
-  object-fit: cover;
-  padding-right: var(--dl-space-space-halfunit);
-}
 .mistakes-journal-icon-group {
   display: flex;
   align-items: center;
@@ -151,7 +159,7 @@
 .mistakes-journal-link {
   display: contents;
 }
-.mistakes-journal-image1 {
+.mistakes-journal-image {
   object-fit: cover;
   transition: 0.3s;
   padding-top: var(--dl-space-space-halfunit);
@@ -160,7 +168,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.mistakes-journal-image1:hover {
+.mistakes-journal-image:hover {
   transform: scale(1.2);
   transition: .2s;
 }
