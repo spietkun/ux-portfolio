@@ -2,9 +2,9 @@
 
 ## Hi! 👋
 
-Hi! I'm Szymon, UX Designer 🧠🎨.
+Hi! I'm Szymon, UX Designer 🧠
 
-Checkout my portfolio 👉🗂️ [Szymon Pietkun: UX designer](https://www.szymonpietkun.com/)
+Checkout my portfolio 🗂️ [Szymon Pietkun: UX designer](https://www.szymonpietkun.com/)
 
 ## Summary
 

@@ -1,0 +1,40 @@
+.logoold-container {
+  display: flex;
+  position: relative;
+}
+.logoold-navlink {
+  font-weight: 700;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  letter-spacing: 5px;
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.logoold-text {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-mj);
+}
+.logoold-text1 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-perfume);
+}
+.logoold-text2 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-fr);
+}
+.logoold-text3 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-fr2);
+}
+.logoold-text4 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-mj);
+}
+.logoold-text5 {
+  font-weight: 700;
+  background-color: var(--dl-color-apps-perfume);
+}
+.logoold-text6 {
+  font-weight: 700;
+}

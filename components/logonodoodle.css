@@ -1,0 +1,15 @@
+.logonodoodle-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.logonodoodle-navlink {
+  font-weight: 700;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  letter-spacing: 5px;
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+
